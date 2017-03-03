@@ -1,0 +1,9 @@
+% Author:
+% Date: 3/3/2017
+%I need to compare X with First Element in List
+
+mymember(X,[X|_]).
+
+% if fail I need to compare X with Elements in List
+
+mymember(X,[_|Y]):-mymember(X,Y).%call itself when fail in any time
